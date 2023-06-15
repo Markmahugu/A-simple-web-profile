@@ -1,0 +1,57 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="bg-stars">
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+  </section>
+
+
+  <div class="banner">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">My profile</a></li>
+      <li><a href="contact.html">My contact</a></li>
+      <li><a href="signin.html">Sign in</a></li>
+    </ul>
+  </div>
+  <div class="center-container">
+    <div class="one-div">
+      <div class="text">
+        <div class="content">
+          <h1>My profile</h1>
+          <img src="me.jpg" alt="Me" width="300" height="300">
+          <p>Hi, I'm Mark Kiarie. I'm a student and a developer. I like to create websites and apps using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; Mark Kiarie 2023</p>
+  </div>
+  <a href="#" class="return-to-top" id="returnToTopButton">↑</a>
+
+  <script>
+    // JavaScript to show/hide the floating button
+    window.onscroll = function() {
+      var button = document.getElementById("returnToTopButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.classList.add("show");
+      } else {
+        button.classList.remove("show");
+      }
+    };
+
+    // JavaScript to scroll to the top when the button is clicked
+    document.getElementById("returnToTopButton").addEventListener("click", function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  </script>
+</body>
+</html>
